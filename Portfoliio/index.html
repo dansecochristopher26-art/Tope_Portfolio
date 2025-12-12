@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Christopher G. Danseco — Portfolio</title>
+<meta name="description" content="Portfolio / resume of Christopher G. Danseco." />
+<style>
+  :root{
+    --bg:#0f1724;
+    --card:#0b1220;
+    --muted:#9aa4b2;
+    --accent:#706970;
+    --glass: rgba(184, 66, 66, 0.04);
+    --text:#e6eef6;
+    --glass-border: rgba(255,255,255,0.06);
+    --pink: #ff4fcf;
+  }
+  body{
+    margin:0; font-family:Arial,sans-serif;
+    background:var(--bg); color:var(--text);
+  }
+  .container{max-width:900px;margin:auto;padding:24px}
+  header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+  .nav-link{margin-left:10px;color:var(--text);text-decoration:none;font-weight:600}
+  .nav-link:hover{color:var(--accent)}
+
+  h1,h2,h3{margin:0 0 10px}
+  section{margin-top:30px}
+  .card{background:var(--card);padding:20px;border-radius:10px;border:1px solid var(--glass-border)}
+
+  .timeline{list-style:none;padding:0;margin:0}
+  .timeline li{padding:10px 0;border-bottom:1px dashed var(--glass-border)}
+  .muted-sm{color:var(--muted);font-size:0.9rem}
+
+  footer{text-align:center;margin-top:30px;color:var(--muted)}
+  input,textarea{width:100%;padding:10px;margin-bottom:10px;border-radius:6px;border:1px solid var(--glass-border);background:transparent;color:var(--text)}
+  button{padding:10px 14px;border-radius:6px;background:var(--accent);color:white;border:none;cursor:pointer;font-weight:700}
+
+ .profile-pic {
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+  margin: 0 auto 20px auto;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  display: block;
+}
+
+/* Social icons styling */
+.social-links { margin: 10px 0 20px 0; }
+.social-icon { width: 40px; height: 40px; margin-right: 10px; vertical-align: middle; transition: transform 0.2s; }
+.social-icon:hover { transform: scale(1.1); }
+
+header h2 { color: var(--pink); }
+header nav .nav-link { color: var(--pink); font-weight: 600; text-decoration: none; margin-left: 10px; transition: color 0.3s; }
+header nav .nav-link:hover { color: var(--pink); }
+
+section h2 { color: var(--pink); margin-bottom: 15px; }
+section h3 { color: #ffffff; margin-bottom: 10px; }
+
+/* Button-like anchor (used for files) */
+a.btn {
+  display:inline-block;
+  background-color: var(--pink);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:700;
+  margin-right:8px;
+  transition: transform 0.2s;
+}
+a.btn:hover { transform: scale(1.05); }
+
+/* Contact send button */
+#contact button.send {
+  background-color: var(--pink);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s;
+}
+#contact button.send:hover { transform: scale(1.03); }
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h2>Hi, I'm Christopher Danseco</h2>
+  <nav aria-label="Main navigation">
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#resume">Resume</a>
+    <a class="nav-link" href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="social-links" aria-hidden="false">
+  <a href="https://www.instagram.com/weird_tope" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram icon" class="social-icon">
+  </a>
+  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook icon" class="social-icon">
+  </a>
+</div>
+
+<!-- Make sure you upload profile.jpg inside the assets folder -->
+<img src="profile.jpg.jpg" alt="Christopher G. Danseco" class="profile-pic">
+
+<section id="about">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>Hi, I’m Christopher! I’m passionate about gaming, sports, and music—they inspire my creativity, keep me active, and help me maintain balance in life. I believe in discipline, continuous growth, and forming meaningful connections with the people around me.</p>
+    <p>As an IT student, my goal is to sharpen my skills and develop projects that have a real, positive impact on the community. I’m always excited to learn, explore new technologies, and turn ideas into solutions that make a difference.</p>
+  </div>
+</section>
+
+<section id="resume">
+  <div class="card">
+    <h2>Resume</h2>
+    <p>Name: Christopher G. Danseco</p>
+    <p>Phone: <a href="tel:+639634045151" style="color:var(--text);text-decoration:none;">09634045151</a></p>
+    <p>Email: <a href="mailto:dansecochristopher26@gmail.com" style="color:var(--text);text-decoration:none;">dansecochristopher26@gmail.com</a></p>
+    <p>Address: Malate, Manila</p>
+
+    <h3>Education</h3>
+    <p>Philippine Christian University</p>
+    <p>Course: Information Technology</p>
+    <p>Year: 3rd Year Student (Ongoing)</p>
+
+    <div class="proj-card">
+      <h3>Some of my activities</h3>
+      <!-- Upload these files under assets/ and keep the same names, or update the links accordingly -->
+      <a class="btn" href="c:\Users\Christopher Danseco\Downloads\Danseco_Lab_Activity1.pdf" target="_blank" rel="noopener noreferrer">1. View</a>
+      <a class="btn" href="c:\Users\Christopher Danseco\Downloads\Lab_Activity2_Danseco.pdf">2. View</a>
+      <a class="btn" href="c:\Users\Christopher Danseco\Downloads\Danseco_Lab_Activity3_HTML.pdf" target="_blank" rel="noopener noreferrer">3. View</a>
+      <a class="btn" href="c:\Users\Christopher Danseco\Downloads\Danseco_Lab_Act1.pdf" target="_blank" rel="noopener noreferrer">4. View</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Phone: <strong>09634045151</strong></p>
+    <p>Email: <strong>dansecochristopher26@gmail.com</strong></p>
+
+    <form id="contactForm">
+      <input id="fieldName" type="text" placeholder="Your Name" required>
+      <input id="fieldEmail" type="email" placeholder="Your Email" required>
+      <textarea id="fieldMessage" placeholder="Your Message" rows="4" required></textarea>
+      <button class="send" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Christopher G. Danseco
+</footer>
+
+</div>
+
+<script>
+  // current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Simple mailto handler for the contact form
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = encodeURIComponent(document.getElementById('fieldName').value.trim());
+    var email = encodeURIComponent(document.getElementById('fieldEmail').value.trim());
+    var message = encodeURIComponent(document.getElementById('fieldMessage').value.trim());
+    var subject = encodeURIComponent('Website contact from ' + name);
+    var body = encodeURIComponent('Name: ' + name + '%0D%0AEmail: ' + email + '%0D%0A%0D%0A' + message);
+    // Opens user's email client — not guaranteed but works for many users
+    window.location.href = 'mailto:dansecochristopher26@gmail.com?subject=' + subject + '&body=' + body;
+  });
+</script>
+</body>
+</html>
